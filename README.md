@@ -24,6 +24,7 @@ python main.py test --att_type [attention type]
 </pre>
 
 ### 3. parameter settings
+#### Possible to change parameters including paths, when you call main.py.
 
 * epoch: 100
 * batch_size: 200
