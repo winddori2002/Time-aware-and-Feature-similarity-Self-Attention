@@ -2,7 +2,7 @@
 
 This is a Pytorch implementation of the Time aware and Feature similarity Self Attention in Vessel Fuel Consumption Prediction. This repository only addresses the models when backbone is BiLSTM. It is possible to change the backbones with class in models.py. \
 
-<center><img src="./images/Model Process.jpg" width="80%" height="80%"></center>
+<center><img src="./images/Model Process.jpg" width="70%" height="70%"></center>
 
 \
 The models are designed to consider data properties, (i.e., sequential, irregular time, feature importance). The repository supports BiLSTM (BASE), Self-Attention (SA), Time-aware Attention (TA), Feature-similarity Attention (FA), Ensemble (ENS). Note that the repositoy does not support dataset.
