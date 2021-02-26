@@ -25,3 +25,13 @@ python main.py test --att_type [attention type]
 
 ### 3. parameter settings
 
+* epoch: 100
+* batch_size: 200
+* lr: 0.001
+
+* att_type: BASE / SA / TA / FA / ENS
+* hidden_size: 4
+* sequence_length: 50
+* num_layers: 2
+* dropout: 0.1
+* function_type: sig
