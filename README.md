@@ -4,7 +4,7 @@ This repository is
 
 ## Requirments
 
-python == 3.7.4
+python == 3.7.4 \
 pytorch == 1.7.1
 
 ## Usage
