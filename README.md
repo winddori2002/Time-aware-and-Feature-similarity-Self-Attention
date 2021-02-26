@@ -1,6 +1,6 @@
 # Time aware and Feature similarity Self Attention in Vessel Fuel Consumption Prediction
 
-This repository is 
+This is a Pytorch implementation of the Time aware and Feature similarity Self Attention in Vessel Fuel Consumption Prediction. asd
 
 ## Requirments
 
@@ -10,6 +10,10 @@ pytorch == 1.7.1
 ## Usage
 
 ### 1. train model
+
+'''
+python main.py train --att_type [attention type]
+'''
 
 ### 2. test model
 
