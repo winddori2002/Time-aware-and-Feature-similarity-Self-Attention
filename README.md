@@ -11,11 +11,9 @@ pytorch == 1.7.1
 
 ### 1. train model
 
-<pre>
 <code>
 python main.py train --att_type [attention type]
 </code>
-</pre>
 
 
 ### 2. test model
