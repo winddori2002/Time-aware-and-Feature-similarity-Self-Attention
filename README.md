@@ -11,9 +11,17 @@ pytorch == 1.7.1
 
 ### 1. train model
 
-'''
-python main.py train --att_type [attention type]
-'''
+<pre>
+<code>
+public class BootSpringBootApplication {
+  public static void main(String[] args) {
+    System.out.println("python main.py train --att_type [attention type]");
+  }
+
+}
+</code>
+</pre>
+
 
 ### 2. test model
 
