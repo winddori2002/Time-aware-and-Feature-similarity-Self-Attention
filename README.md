@@ -13,12 +13,7 @@ pytorch == 1.7.1
 
 <pre>
 <code>
-public class BootSpringBootApplication {
-  public static void main(String[] args) {
-    System.out.println("python main.py train --att_type [attention type]");
-  }
-
-}
+python main.py train --att_type [attention type]
 </code>
 </pre>
 
