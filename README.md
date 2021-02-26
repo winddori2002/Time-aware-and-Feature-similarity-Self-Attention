@@ -2,7 +2,7 @@
 
 This is a Pytorch implementation of the Time aware and Feature similarity Self Attention in Vessel Fuel Consumption Prediction. This repository only addresses the models when backbone is BiLSTM. It is possible to change the backbones with class in models.py. \
 
-<img src = "./images/Model Process.jpg" width="40%">
+<img src = "./images/Model Process.jpg" width="80%">
 
 
 \
