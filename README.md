@@ -43,3 +43,22 @@ python main.py test --att_type [attention type]
 * num_layers: 2
 * dropout: 0.1
 * function_type: sig
+
+
+## Visualizations
+
+### 1. Feature importance
+#### Estimated feature importance from FA model. Feature importance is learnable parameters.
+
+<center><img src="./images/Importance.jpg" width="70%" height="70%"></center>
+
+### 2. TA attention map
+#### One example of TA attention map. TA ignores point where time difference increases rapidly.
+
+<center><img src="./images/TA_MAP.jpg" width="70%" height="70%"></center>
+
+
+### 3. FA attention map
+#### One example of FA attention map. FA makes symmetric attention maps and FA is especially affected by Speed.
+
+<center><img src="./images/FA_MAP.jpg" width="70%" height="70%"></center>
