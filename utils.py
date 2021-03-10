@@ -33,7 +33,7 @@ def distance_mat(data):
 
 def neptune_load(experiment_name, tag_name, PARAMS):
     # logging
-    neptune.init('winddori/TimePaper2', api_token = 'eyJhcGlfYWRkcmVzcyI6Imh0dHBzOi8vdWkubmVwdHVuZS5haSIsImFwaV91cmwiOiJodHRwczovL3VpLm5lcHR1bmUuYWkiLCJhcGlfa2V5IjoiMmU3YzQzNTgtMmVmNC00MmU1LTkzYWUtN2NiNWU5MmE5YTdjIn0=')
+    neptune.init('winddori/TimePaper2', api_token = '=')
     neptune.create_experiment(name=experiment_name, params=PARAMS)
     neptune.append_tag(tag_name)
     
