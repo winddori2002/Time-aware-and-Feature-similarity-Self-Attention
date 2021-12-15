@@ -85,13 +85,13 @@ You can find important features by visualizing learnable feature importance para
 ## 2. TA attention map
 ### One example of TA attention map. TA ignores point where time difference increases rapidly.
 
-<center><img src="./images/TA_MAP.jpg" width="40%" height="40%"></center>
+<center><img src="./images/TA_MAP.jpg" width="80%" height="80%"></center>
 
 
 ## 3. FA attention map
 ### One example of FA attention map. FA makes symmetric attention maps and FA is especially affected by Speed.
 
-<center><img src="./images/FA_MAP.jpg" width="40%" height="40%"></center>
+<center><img src="./images/FA_MAP.jpg" width="80%" height="80%"></center>
 
 
 # Citation
