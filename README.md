@@ -91,7 +91,7 @@ You can find important features by visualizing learnable feature importance para
 ## 3. FA attention map
 ### One example of FA attention map. FA makes symmetric attention maps and FA is especially affected by Speed.
 
-<center><img src="./images/FA_MAP.jpg" width="50%" height="50%"></center>
+<center><img src="./images/FA_MAP.jpg" width="45%" height="45%"></center>
 
 
 # Citation
