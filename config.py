@@ -24,7 +24,7 @@ def get_Config():
 
     # learning param
     parser.add_argument('--epoch', type=int, default=100, help='Epoch')
-    parser.add_argument('--batch_size', type=int, default=200, help='Batch size')
+    parser.add_argument('--batch_size', type=int, default=256, help='Batch size')
     parser.add_argument('--lr', type=float, default=0.001, help='Learning rate')
     parser.add_argument('--att_type', type=str, default='TA', help='Att type') # BASE, SA, TA, FA, ENS
     
