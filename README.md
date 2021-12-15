@@ -60,7 +60,7 @@ Model Arguments:
   
 Setting arguments:
   --epoch: Number of epochs (default:100)
-  --batch_size: Batch size (default:200)
+  --batch_size: Batch size (default:256)
   --lr: Learning rate (default:0.001)
   --device: Cuda device (default:cuda:0)
   --logging: Logging option (default:False)
