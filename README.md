@@ -27,19 +27,56 @@ pip install -r requirements.txt
 
 # Usage
 
-## 1. train model
-<pre>
-<code>
-python main.py train --att_type [attention type]
-</code>
-</pre>
+Since the repository does not support datasets, it is necessary to fit your data into the code.
+Other numeric features can be used easily, but you need to get the ```"time diff"``` feature, which is the
+time difference right before data in the sequence. The unit of time diff in the paper is a minute.
+Otherwise, you can use the part of the model and attention modules.
 
-## 2. test model
-<pre>
-<code>
+## 1. Train
+
+### Training with default settings
+
+You can train the model with default setting by running the following code.
+
+```C
+python main.py train --att_type [attention type]
+```
+
+### Training with other arguments
+If you want to edit model settings, you can run the following code with other arguments. 
+
+In ```config.py```, you can find other arguments, such as batch size, epoch, and so on.
+
+```
+python main.py train --hidden 60 --depth 4 --growth 2 --kernel_size 8 --stride 4 --segment_len 64 --aug True --aug_type tempo
+
+MANNER arguments:
+  --in_channels: initial in channel size (default:1)
+  --out_channels: initial out channel size (default:1)
+  --hidden: channel size to expand (default:60)
+  --depth: number of layers for encoder and decoder (default:4)
+  --kernel_size: kernel size for UP/DOWN conv (default:8)
+  --stride: stride for UP/DOWN conv (default:4)
+  --growth: channel expansion ration (default:2)
+  --head: number of head for global attention (default:1)
+  --segment_len: chunk size for overlapped chunking (default:64)
+  
+Setting arguments:
+  --sample_rate: sample_rate (default:16000)
+  --segment: segment the audio signal with seconds (default:4)
+  --set_stride: Overlapped seconds when segment the signal (default:1)
+  
+Augmentation arguments:
+  --aug: True/False 
+  --aug_type: augmentation type (tempo, speed, shift available. only shift available on Windows.)
+```
+
+
+## 2. Test
+
+```C
 python main.py test --att_type [attention type]
-</code>
-</pre>
+```
 
 ## 3. parameter settings
 ### Possible to change parameters including paths, when you call main.py.
