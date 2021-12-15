@@ -63,3 +63,20 @@ python main.py test --att_type [attention type]
 #### One example of FA attention map. FA makes symmetric attention maps and FA is especially affected by Speed.
 
 <center><img src="./images/FA_MAP.jpg" width="40%" height="40%"></center>
+
+
+## Citation
+
+If you use the code in your paper, then please cite it as:
+```C
+@article{park2021time,
+  title={Time-Aware and Feature Similarity Self-Attention in Vessel Fuel Consumption Prediction},
+  author={Park, Hyun Joon and Lee, Min Seok and Park, Dong Il and Han, Sung Won},
+  journal={Applied Sciences},
+  volume={11},
+  number={23},
+  pages={11514},
+  year={2021},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+```
