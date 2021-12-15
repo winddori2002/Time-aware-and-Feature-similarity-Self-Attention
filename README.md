@@ -76,6 +76,8 @@ python main.py test --att_type [attention type]
 
 # Visualizations
 
+You can visualize the model results (feature importance parameters, attention map). They suggest interpretable results to understand the model and data. We provide some examples of the results.
+
 ## 1. Feature importance
 ### Estimated feature importance from FA model. Feature importance is learnable parameters.
 You can find important features by visualizing learnable feature importance parameters.
@@ -83,16 +85,16 @@ You can find important features by visualizing learnable feature importance para
 <center><img src="./images/Importance.jpg" width="40%" height="40%"></center>
 
 ## 2. TA attention map
-### One example of TA attention map. TA ignores point where time difference increases rapidly.
+### One example of TA attention map. 
+We notice that TA ignores points where the time difference increases rapidly.
 
 <center><img src="./images/TA_MAP.jpg" width="60%" height="60%"></center>
 
-
 ## 3. FA attention map
-### One example of FA attention map. FA makes symmetric attention maps and FA is especially affected by Speed.
+### One example of FA attention map. 
+We notice that FA makes symmetric attention maps and FA is especially affected by Speed.
 
 <center><img src="./images/FA_MAP.jpg" width="45%" height="45%"></center>
-
 
 # Citation
 
