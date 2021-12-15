@@ -1,0 +1,8 @@
+numpy
+pandas
+scikit-learn
+tqdm
+pyyaml
+neptune-client
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==1.7.1+cu110
