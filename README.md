@@ -17,30 +17,32 @@ The OS, python and pytorch version needs as below:
 - Windows / Linux 
 - python >= 3.7.4
 - pytorch >= 1.7.1
- 
-## Requirments
 
-python == 3.7.4 \
-pytorch == 1.7.1
+You can install requirements through git and requirements.txt except for pytorch and torchaudio.
+```C
+git clone https://github.com/winddori2002/Time-aware-and-Feature-similarity-Self-Attention.git
+cd MANNER
+pip install -r requirements.txt
+```
 
-## Usage
+# Usage
 
-### 1. train model
+## 1. train model
 <pre>
 <code>
 python main.py train --att_type [attention type]
 </code>
 </pre>
 
-### 2. test model
+## 2. test model
 <pre>
 <code>
 python main.py test --att_type [attention type]
 </code>
 </pre>
 
-### 3. parameter settings
-#### Possible to change parameters including paths, when you call main.py.
+## 3. parameter settings
+### Possible to change parameters including paths, when you call main.py.
 
 * epoch: 100
 * batch_size: 200
@@ -54,26 +56,26 @@ python main.py test --att_type [attention type]
 * function_type: sig
 
 
-## Visualizations
+# Visualizations
 
-### 1. Feature importance
-#### Estimated feature importance from FA model. Feature importance is learnable parameters.
+## 1. Feature importance
+### Estimated feature importance from FA model. Feature importance is learnable parameters.
 
 <center><img src="./images/Importance.jpg" width="40%" height="40%"></center>
 
-### 2. TA attention map
-#### One example of TA attention map. TA ignores point where time difference increases rapidly.
+## 2. TA attention map
+### One example of TA attention map. TA ignores point where time difference increases rapidly.
 
 <center><img src="./images/TA_MAP.jpg" width="40%" height="40%"></center>
 
 
-### 3. FA attention map
-#### One example of FA attention map. FA makes symmetric attention maps and FA is especially affected by Speed.
+## 3. FA attention map
+### One example of FA attention map. FA makes symmetric attention maps and FA is especially affected by Speed.
 
 <center><img src="./images/FA_MAP.jpg" width="40%" height="40%"></center>
 
 
-## Citation
+# Citation
 
 If you use the code in your paper, then please cite it as:
 ```C
