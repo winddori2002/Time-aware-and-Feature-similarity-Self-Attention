@@ -21,7 +21,7 @@ The OS, python and pytorch version needs as below:
 You can install requirements through git and requirements.txt except for pytorch and torchaudio.
 ```C
 git clone https://github.com/winddori2002/Time-aware-and-Feature-similarity-Self-Attention.git
-cd MANNER
+cd Time-aware-and-Feature-similarity-Self-Attention
 pip install -r requirements.txt
 ```
 
