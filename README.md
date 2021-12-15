@@ -37,6 +37,7 @@ Otherwise, you can use the part of the model and attention modules.
 ### Training with default settings
 
 You can train the model with default setting by running the following code.
+If you want to train the ensemble model, you should have trained both TA and FA before.
 
 ```C
 python main.py train --att_type [attention type]
@@ -48,55 +49,36 @@ If you want to edit model settings, you can run the following code with other ar
 In ```config.py```, you can find other arguments, such as batch size, epoch, and so on.
 
 ```
-python main.py train --hidden 60 --depth 4 --growth 2 --kernel_size 8 --stride 4 --segment_len 64 --aug True --aug_type tempo
-
-MANNER arguments:
-  --in_channels: initial in channel size (default:1)
-  --out_channels: initial out channel size (default:1)
-  --hidden: channel size to expand (default:60)
-  --depth: number of layers for encoder and decoder (default:4)
-  --kernel_size: kernel size for UP/DOWN conv (default:8)
-  --stride: stride for UP/DOWN conv (default:4)
-  --growth: channel expansion ration (default:2)
-  --head: number of head for global attention (default:1)
-  --segment_len: chunk size for overlapped chunking (default:64)
+Model Arguments:
+  --input_size: Input size (number of features, default:16)
+  --output_size: Output size (default:1)
+  --hidden_size: hidden size (default:4)
+  --sequence_length: Sequence length (default:50)
+  --num_layers: Number of layers (default:3)
+  --dropout: Dropout ratio (default:0.1)
+  --att_type: Attention type (BASE, SA, TA, FA, ENS)
   
 Setting arguments:
-  --sample_rate: sample_rate (default:16000)
-  --segment: segment the audio signal with seconds (default:4)
-  --set_stride: Overlapped seconds when segment the signal (default:1)
-  
-Augmentation arguments:
-  --aug: True/False 
-  --aug_type: augmentation type (tempo, speed, shift available. only shift available on Windows.)
+  --epoch: Number of epochs (default:100)
+  --batch_size: Batch size (default:200)
+  --lr: Learning rate (default:0.001)
+  --device: Cuda device (default:cuda:0)
+  --logging: Logging option (default:False)
 ```
 
-
 ## 2. Test
+
+After training, you can evaluate the model in terms of RMSE and MAE by running the code below.
 
 ```C
 python main.py test --att_type [attention type]
 ```
 
-## 3. parameter settings
-### Possible to change parameters including paths, when you call main.py.
-
-* epoch: 100
-* batch_size: 200
-* lr: 0.001
-
-* att_type: BASE / SA / TA / FA / ENS
-* hidden_size: 4
-* sequence_length: 50
-* num_layers: 2
-* dropout: 0.1
-* function_type: sig
-
-
 # Visualizations
 
 ## 1. Feature importance
 ### Estimated feature importance from FA model. Feature importance is learnable parameters.
+You can find important features by visualizing learnable feature importance parameters.
 
 <center><img src="./images/Importance.jpg" width="40%" height="40%"></center>
 
