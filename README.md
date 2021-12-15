@@ -1,6 +1,6 @@
 # Time aware and Feature similarity Self Attention in Vessel Fuel Consumption Prediction
 
-This is a Pytorch implementation of [Time aware and Feature similarity Self Attention in Vessel Fuel Consumption Prediction](https://www.mdpi.com/2076-3417/11/23/11514). This repository only addresses the models when backbone is BiLSTM. It is possible to change the backbones with class in models.py. Each attention moudels is located before the prediction layer. Ensemble consists of three fully-connected layers. 
+This is a Pytorch implementation of [Time aware and Feature similarity Self Attention in Vessel Fuel Consumption Prediction](https://www.mdpi.com/2076-3417/11/23/11514). Time aware Attention (TA) emphasizes data in the sequence by considering irregular time intervals. Feature similarity Attention (FA) estimates feature importance and similarities to emphasize data. Finally, the ensemble model of TA and FA-based BiLSTM can simultaneously represent both time and feature information. This repository only addresses the models with BiLSTM as the backbone. However, TA and FA as the attention modules can be easily applied in other backbones such as Transformer.
 \
 \
 The overall architecture and attention process are as below:
